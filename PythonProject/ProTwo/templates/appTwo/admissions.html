@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% extends "appTwo/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+    <link rel="stylesheet" href="{% static 'css/icons.css' %}"/>
+    <br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+<div class="container">
+<h3>Admission Details for Current Academic Year are as follows : </h3>
+<br>
+{% if records %}
+    <table>
+    <thead>
+    <th style="border: 5px solid white;
+  width:100%;
+  height:50px;
+  padding: 15px;
+  background-color: #2c2f35;
+  color: white;
+  font-size: large;">Branch</th>
+    <th style="border: 5px solid white;
+  width:100%;
+  height:50px;
+  padding: 15px;
+  background-color: #2c2f35;
+  color: white;
+  font-size: large;">Total Intake</th>
+    <th style="border: 5px solid white;
+  width:100%;
+  height:50px;
+  padding: 15px;
+  background-color: #2c2f35;
+  color: white;
+  font-size: large;">Cutoff</th>
+    <th style="border: 5px solid white;
+  width:100%;
+  height:50px;
+  padding: 15px;
+  background-color: #2c2f35;
+  color: white;
+  font-size: large;">Placement(%)</th>
+    </thead>
+    {% for rec in records %}
+        <tr>
+        <td style="border: 5px solid white;
+  color: #3d4451;
+  font-size: medium;">{{ rec.branch_name }}</td>
+        <td style="border: 5px solid white;
+  color: #3d4451;
+  font-size: medium;">{{ rec.totalIntake }}</td>
+        <td style="border: 5px solid white;
+  color: #3d4451;
+  font-size: medium;">{{ rec.cutoff }}</td>
+        <td style="border: 5px solid white;
+  color: #3d4451;
+  font-size: medium;">{{ rec.placementStats }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <br>
+    <small>Placement Statics are reported in accordance with former Academic Year</small>
+{% else %}
+    <h1><strong>Admission Details Will Be Displayed Shortly</strong>></h1>
+{% endif %}
+</div>
+{% endblock %}

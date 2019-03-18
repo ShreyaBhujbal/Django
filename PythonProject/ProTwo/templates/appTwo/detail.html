@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends "appTwo/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h4>{{ question.question_text }}</h4>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    <form action="{% url 'appTwo:vote' question.id %}" method="POST">
+        {% csrf_token %}
+        {% for choice in question.choice_set.all %}
+            <input type="radio" name="choice" id="choice{{forloop.counter}}" value="{{choice.id}}"/>
+        <label for="choice{{forloop.counter}}">{{choice.choice_text}}</label><br>
+        {% endfor %}
+    <input type="submit" value="vote"/>
+    </form>
+
+
+    </div>
+{% endblock %}

@@ -1,0 +1,46 @@
+#video {
+    background-image: url("static/images/blur.jpg");
+}
+
+body{
+    background-color: #d3a254;
+}
+p{
+  text-align: center;
+}
+.btn-space {
+    margin-right: 25px;
+}
+
+#coll{
+
+   text-align: center;
+  color: #e51010;
+  font-family: 'Forum', cursive;
+  font-size: 50px;
+  font-weight: bolder;
+
+}
+
+#links
+{
+  display:inline;
+}
+#miss
+{
+  text-align:center;
+}
+
+#container{
+    margin-top: 100px;
+    margin-bottom: inherit;
+}
+
+
+
+.header h1 {
+  color: red;
+  position: relative;
+  top: 18px;
+  left: 10px;
+}

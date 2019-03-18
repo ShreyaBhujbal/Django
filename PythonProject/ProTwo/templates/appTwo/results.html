@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "appTwo/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4>{{ question.question_text }}</h4>
+    <ul>
+    {% for choice in question.choice_set.all %}
+        <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'appTwo:detail' question.id %}">Vote Again</a>
+{% endblock %}

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="socialicon.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="manualslide.css">
+    <script src="project.js" charset="utf-8"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="video.css">
+<link rel="stylesheet" href="icons.css">
+<link rel="stylesheet" href="branches.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+
+  </head>
+
+
+     <body>
+     <div>
+       <nav class="navbar navbar-dark bg-dark navbar fixed-top">
+
+           <div class="navbar-header"><img src="LOGOOO.jpg" height=100 width=100 class="navbar-brand" >
+             <h1 class="navbar-brand" id="coll">IMPERIAL INSTITUTE OF ENGINEERING<br></h1>
+
+           </div>
+
+          <div class="container" id="links">
+           <!-- <a class="nav-link active" href="#home">HOME</a><a class="nav-link active" href="#about">ABOUT</a><a class="nav-link active" href="#faculty">FACULTY</a><a class="nav-link active" href="#admissions">ADMISSIONS</a><a class="nav-link active" href="#placements">PLACEMENTS</a>
+   --><p>   </p>
+              <a href="{% url 'index' %}"><button type="button"  class="btn btn-space btn-outline-success">HOME</button></a>
+              <a href="{%url 'appTwo:about'%}"><button type="button" class="btn btn-space btn-outline-success">ABOUT</button></a>
+              <a href="{%url 'appTwo:admissions'%}"><button type="button" class="btn btn-space btn-outline-success">ADMISSIONS</button></a>
+              <a href="{%url 'appTwo:login'%}"><button type="button" class="btn btn-space btn-outline-success">FACULTY</button></a>
+              <a href="{%url 'appTwo:placements'%}"><button type="button" class="btn btn-space btn-outline-success">PLACEMENTS</button></a>
+
+   </div>
+   </nav></div>
+   <br><br><br><br><br>
+         <div  id="video" >
+      <object align="middle">
+        <video class="vid" height=500 width=1350 margin-top=1000 muted autoplay>
+          <source src="Oxford_University_by_drone.mp4" type="video/mp4">
+          <source src="Oxford_University_by_drone.ogg" type="video/ogg">
+        </video>
+      </object>
+
+    </div>
+<br><br><br>
+
+  <h1 id="miss">Our Mission is to enable our students
+  to be the best they can be throughout their life.
+  </h1>
+  <div class="container">
+  <p>Wilderness School is grounded in values of a non-denominational Christian family tradition. The school is founded in the belief for unlimited kindness in relationships, joy in learning, a spirit of humility and the balance between seeking individual excellence and generous service to the community. These values guide every part of Wilderness School's culture, relationships, teaching and learning programs.
+  </p>
+</div>
+
+<br><br>
+
+  <div class="row">
+  <div id="branch" class="col-sm-3 col-xs-6"><img src="Computers.jpg" class="image" alt="no">
+    <div class="middle">
+      <div class="text">
+        <a href="#" onclick="document.getElementById('contents1').style.cssText = ''">Computer</a>
+        <div class="container" id="contents1" style="display:none;">
+            <h2>Contents of link1</h2>
+            <iframe src="comps.html" width="500" height="400"></iframe>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div id="branch" class="col-sm-3 col-xs-6"><img src="Electronics.jpg" class="image" alt="no">
+  <div class="middle">
+    <div class="text">
+      <a href="#" onclick="document.getElementById('contents1').style.cssText = ''">Computer</a>
+      <div class="container" id="contents1" style="display:none;">
+          <h2>Contents of link1</h2>
+          <iframe src="comps.html" width="500" height="400"></iframe>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div id="branch" class="col-sm-3 col-xs-6"><img src="InfoTech.jpg" class="image"  alt="no">
+    <div class="middle">
+      <div class="text">
+        <a href="#" onclick="document.getElementById('contents1').style.cssText = ''">Computer</a>
+        <div class="container" id="contents1" style="display:none;">
+            <h2>Contents of link1</h2>
+            <iframe src="comps.html" width="500" height="400"></iframe>
+        </div>
+      </div>
+      </div>
+  </div>
+
+  <div id="branch" class="col-sm-3 col-xs-6"><img src="PRODUCTION.jpg" class="image" alt="no" >
+    <div class="middle">
+      <div class="text">
+        <a href="#" onclick="document.getElementById('contents1').style.cssText = ''">Computer</a>
+        <div class="container" id="contents1" style="display:none;">
+            <h2>Contents of link1</h2>
+            <iframe src="comps.html" width="500" height="400"></iframe>
+        </div>
+      </div>
+      </div>
+  </div>
+  </div>
+
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="0slider.jpg" style="width:100%">
+  <img class="mySlides" src="1slider.jpg" style="width:100%">
+  <img class="mySlides" src="2slider.jpg" style="width:100%">
+  <img class="mySlides" src="3slider.jpg" style="width:100%">
+  <img class="mySlides" src="4slider.jpg" style="width:100%">
+  <img class="mySlides" src="5slider.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+<br><br>
+<div class="navbar" id="social">
+    <a href="http://www.facebook.com" target="_blank"><img src="facebook.png"></a>
+<a href="http://www.twitter.com" target="_blank"><img src="twitter.png"></a>
+<a href="http://www.instagram.com" target="_blank"><img src="insta.png"></a>
+<a href="http://www.youtube.com" target="_blank"><img src="youtube.png"></a>
+
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
+
+  </body>
+</html>
+*********************************************************************
+
+
+
+<div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Line graph<small>Placements</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                  <!--        <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>-->
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                  <!--lineChart-->
+                    <canvas id="lineChart"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Bar graph <small> Placements</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                  <!--        <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>-->
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                  <!--mybarChart-->
+                    <canvas id="mybarChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Radar <small>Placements</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                    <!--      <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>-->
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                  <!--canvasRadar-->
+                    <canvas id="canvasRadar"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Donut Graph <small>Placements</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                      <!--    <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>-->
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                  <!--canvasDoughnut-->
+                    <canvas id="canvasDoughnut"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Pie Graph Chart <small>Placements</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                    <!--      <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li> -->
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                  <!--pieChart-->
+                    <canvas id="pieChart"></canvas>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Pie Area Graph <small>Placements</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                <!--          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li> -->
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                  <!--polarArea-->
+                    <canvas id="polarArea"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script>
+      /*Chart.defaults.global.legend = {
+        enabled: false
+      };*/
+
+      // Line chart
+      var ctx = document.getElementById("lineChart");
+      var lineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["2012","2013", "2014", "2015", "2016", "2017"],
+          datasets: [{
+            label: "COMPUTER",
+            backgroundColor: "rgba(36, 175, 145, 0.31)",
+            borderColor: "rgba(38, 185, 154, 0.7)",
+            pointBorderColor: "rgba(38, 185, 154, 0.7)",
+            pointBackgroundColor: "rgba(38, 185, 154, 0.7)",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(22,22,22,1)",
+            pointBorderWidth: 3,
+            data: [50,60,80,100,85,100]
+          }, {
+            label: "IT",
+            backgroundColor: "rgba(150, 150, 0, 0.3)",
+            borderColor: "rgba(214, 209, 72, 0.70)",
+            pointBorderColor: "rgba(3, 88, 106, 0.70)",
+            pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(151,187,205,1)",
+            pointBorderWidth: 1,
+            data: [40,50,70,90,70,95]
+          },{
+            label: "ELECTRONICS",
+            backgroundColor: "rgba(250, 61, 61, 0.31)",
+            borderColor: "rgba(500, 185, 154, 0.7)",
+            pointBorderColor: "rgba(700, 185, 154, 0.7)",
+            pointBackgroundColor: "rgba(700, 185, 154, 0.7)",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(22,22,22,1)",
+            pointBorderWidth: 3,
+            data: [30,40,60,75,60,60]
+          }, {
+            label: "PRODUCTION",
+            backgroundColor: "rgba(51, 126, 247, 0.3)",
+            borderColor: "rgba(3, 88, 106, 0.70)",
+            pointBorderColor: "rgba(3, 88, 106, 0.70)",
+            pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
+            pointHoverBackgroundColor: "#fff",
+            pointHoverBorderColor: "rgba(151,187,205,1)",
+            pointBorderWidth: 1,
+            data: [10,15,20,30,20,30]
+
+
+
+          }]
+        },
+      });
+
+      // Bar chart
+      var ctx = document.getElementById("mybarChart");
+      var mybarChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels:  ["2012","2013", "2014", "2015", "2016", "2017"],
+          datasets: [{
+            label: 'COMPUTER',
+            backgroundColor: "#24af91",
+            data: [50,60,80,100,85,100]
+          }, {
+            label: 'IT',
+            backgroundColor: "#d6d148",
+            data: [40,50,70,90,70,95]
+          },{
+            label: 'ELECTRONICS',
+            backgroundColor: "#bf3d3d",
+            data:  [30,40,60,75,60,60]
+          }, {
+            label: 'PRODUCTION',
+            backgroundColor: "#337ef7",
+            data:  [10,15,20,30,20,30]
+
+
+          }]
+        },
+
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
+        }
+      });
+
+      // Doughnut chart
+      var ctx = document.getElementById("canvasDoughnut");
+      var data = {
+        labels: [
+          "IT",
+          "ELECTRONICS",
+          "COMPUTER",
+          "PRODUCTION"
+        ],
+        datasets: [{
+          data: [95,60,100,30],
+          backgroundColor: [
+            "#d6d148",
+            "#bf3d3d",
+            "#24af91",
+            "#3498DB"
+          ],
+          hoverBackgroundColor: [
+            "#34495E",
+            "#bc0707",
+            "#16af87",
+            "#49A9EA"
+          ]
+
+        }]
+      };
+
+      var canvasDoughnut = new Chart(ctx, {
+        type: 'doughnut',
+        tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+        data: data
+      });
+
+      // Radar chart
+      var ctx = document.getElementById("canvasRadar");
+      var data = {
+        labels: ["2012","2013", "2014", "2015", "2016", "2017"],
+        datasets: [{
+          label: "COMPUTER",
+          backgroundColor: "rgba(36, 175, 145, 0.2)",
+          borderColor: "rgba(3, 88, 106, 0.80)",
+          pointBorderColor: "rgba(3, 88, 106, 0.80)",
+          pointBackgroundColor: "rgba(3, 88, 106, 0.80)",
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: "rgba(220,220,220,1)",
+          data: [50,60,80,100,85,100]
+        }, {
+          label: "IT",
+          backgroundColor: "rgba(214, 209, 0, 0.2)",
+          borderColor: "rgba(200, 150, 70, 0.85)",
+          pointColor: "rgba(38, 185, 154, 0.85)",
+          pointBackgroundColor: "rgba(200, 100, 70, 0.80)",
+        //  pointStrokeColor: "#fff",
+      //    pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data: [40,50,70,90,70,95]
+        }, {
+          label: "ELECTRONICS",
+          backgroundColor: "rgba(191, 61, 61, 0.2)",
+          borderColor: "rgba(90, 88, 106, 0.80)",
+          pointBorderColor: "rgba(3, 88, 106, 0.80)",
+          pointBackgroundColor: "rgba(3, 88, 106, 0.80)",
+          pointHoverBackgroundColor: "#fff",
+          pointHoverBorderColor: "rgba(220,220,220,1)",
+          data: [30,40,60,75,60,60]
+        }, {
+          label: "PRODUCTION",
+          backgroundColor: "rgba(38, 185, 154, 0.2)",
+          borderColor: "rgba(38, 185, 154, 0.85)",
+          pointColor: "rgba(38, 185, 154, 0.85)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          data:  [10,15,20,30,20,30]
+
+        }]
+      };
+
+      var canvasRadar = new Chart(ctx, {
+        type: 'radar',
+        data: data,
+      });
+
+      // Pie chart
+      var ctx = document.getElementById("pieChart");
+      var data = {
+        datasets: [{
+          data: [95,60,30,100],
+          backgroundColor: [
+            "#d6d148",
+            "#bf3d3d",
+            "#24af91",
+            "#3498DB"
+          ],
+          label: 'My dataset' // for legend
+        }],
+        labels: [
+          "IT",
+          "ELECTRONICS",
+          "COMPUTER",
+          "PRODUCTION"
+        ]
+      };
+
+      var pieChart = new Chart(ctx, {
+        data: data,
+        type: 'pie'/*,
+        options: {
+          legend: false
+        }*/
+      });
+
+      // PolarArea chart
+      var ctx = document.getElementById("polarArea");
+      var data = {
+        datasets: [{
+          data: [95,60,100,30],
+          backgroundColor: [
+            "#d6d148",
+            "#bf3d3d",
+            "#24af91",
+            "#3498DB"
+          ],
+          label: 'My dataset'
+        }],
+        labels: [
+          "IT",
+          "ELECTRONICS",
+          "COMPUTER",
+          "PRODUCTION"
+        ]
+      };
+
+      var polarArea = new Chart(ctx, {
+        data: data,
+        type: 'polarArea',
+        options: {
+          scale: {
+            ticks: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>

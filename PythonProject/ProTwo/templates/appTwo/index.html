@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends "appTwo/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <object align="middle">
+        <video class="vid" height=500 width=1350 margin-top=1000 muted autoplay>
+          <source src="{% static "images/Video.mp4" %}" type="video/mp4">
+          <!--<source src="video.ogg" type="video/ogg">-->
+        </video>
+      </object>
+     <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1 style="font-family: 'Baskerville Old Face'; color: maroon">Find your Path. Pursue Your Career.</h1>
+        <h4  style="color: #333333">Imperial students are doing interesting things and going interesting places with opportunities <br>they couldn't imagine possible elsewhere. Be it Computer Science, Information Technology, Production Engineering or Electronics Engineering... <br>We ensure students all-round development with our excellent technical as well as ,<br>non-technical programmes that help students map their ideal career.</h4>
+        <h3><strong>So what are you waiting for?
+        Join us at Imperial now!</strong></h3>
+    </div>
+    <br><br><br>
+
+
+
+{% endblock %}
